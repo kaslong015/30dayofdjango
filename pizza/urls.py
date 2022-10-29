@@ -39,6 +39,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
+    path('zuri/', include('zuri.urls')),
     path('order/', include('orders.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path('swagger<format>.json|.yaml)',
