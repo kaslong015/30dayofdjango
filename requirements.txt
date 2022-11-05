@@ -14,7 +14,7 @@ django-phonenumbers==1.0.1
 django-rest-enumfield==0.2.0
 django-templated-mail==1.1.1
 djangorestframework==3.13.1
-djangorestframework-simplejwt==5.2.0
+djangorestframework-simplejwt
 djoser==2.1.0
 drf-yasg==1.21.3
 gunicorn==20.1.0
