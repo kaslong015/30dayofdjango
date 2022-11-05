@@ -55,19 +55,19 @@ class MathView(generics.GenericAPIView):
                     "result": Compute.multiplication(serializer.data['x'], serializer.data['y']),
                     "operation_type": 'multiplication'
 
-                }, status=status.HTTP_201_CREATED)
+                }, status=status.HTTP_200_OK)
             if serializer.data['operation_type'] == 'ADDITION':
                 return Response(data={
                     "slackUsername": "kaslong",
                     "result": Compute.addition(serializer.data['x'], serializer.data['y']),
                     "operation_type": 'addition'
 
-                }, status=status.HTTP_201_CREATED)
+                }, status=status.HTTP_200_OK)
             if serializer.data['operation_type'] == 'SUBTRACTION':
                 return Response(data={
                     "slackUsername": "kaslong",
                     "result": Compute.subtraction(serializer.data['x'], serializer.data['y']),
                     "operation_type": 'subtraction'
 
-                }, status=status.HTTP_201_CREATED)
+                }, status=status.HTTP_200_OK)
         return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
